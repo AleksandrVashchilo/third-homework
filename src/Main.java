@@ -1,9 +1,6 @@
 public class Main {
     public static void main(String[] args) {
 
-        //Person person = new Person("Mark", 35, 170, 65);
-        //Person secondPerson = new Person();
-
         Money money = new Money();
         int m = money.getMoney();
         System.out.println(m);
@@ -18,11 +15,7 @@ public class Main {
         System.out.println(statePension);
         System.out.println(nonStatePension);
 
-        //String name = person.getName();
-        //System.out.println(name);
-
-        //person.setName("Pavel");
-        //name = person.getName();
-        //System.out.println(name);
+        Pensioner pensioner = new Pensioner("Mark", 35, 170, 65, 1.2);
+        System.out.println(pensioner);
     }
 }

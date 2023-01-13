@@ -16,10 +16,10 @@ public class PensionFund {
     public double calculatePension(int age, double minSalary, double maxSalary) {
         double averageSalary;
         if (isState) {
-            averageSalary = AverageUtils.averageOfTwoNumber(minSalary, maxSalary);
+            averageSalary = AverageUtils.average(minSalary, maxSalary);
         }
         else {
-            averageSalary = AverageUtils.averageOfThreeNumber(minSalary, maxSalary, AVERAGE_SALARY);
+            averageSalary = AverageUtils.average(minSalary, maxSalary, AVERAGE_SALARY);
         }
         return averageSalary * age * PENSION_COEFFICIENT;
     }
